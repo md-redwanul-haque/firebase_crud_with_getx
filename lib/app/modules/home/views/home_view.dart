@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../components.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -21,13 +22,10 @@ class HomeView extends GetView<HomeController> {
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: TextFormField(
-
-                decoration: InputDecoration(
-                  hintStyle: TextStyle(fontSize: 17),
-                  hintText: 'Email',
-                ),
-              ),
+              child: LoginEditField(
+                hintText: 'Please Input Email',
+                secureVal: false,
+              )
             ),
 
             Padding(
