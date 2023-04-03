@@ -40,7 +40,7 @@ class HomeView extends GetView<HomeController> {
                 controller: controller.passWord,
                 decoration: InputDecoration(
                   hintStyle: TextStyle(fontSize: 17),
-                  hintText: 'Email',
+                  hintText: 'PassWord',
                 ),
               ),
             ),
