@@ -38,7 +38,11 @@ class MultipleImageController extends GetxController {
     }else{
       Get.snackbar('Fail', 'No Image Selected',backgroundColor: Colors.red.shade50,colorText: Colors.white);
     }
+    selectFileCount.value =imagepaths.length;
+  }
 
+  void uploadImage(){
 
   }
+
 }
